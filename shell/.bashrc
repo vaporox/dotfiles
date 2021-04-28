@@ -1,10 +1,10 @@
-export PATH="$HOME/bin:$PATH"
-export PS1='\[\e[36m\]\w \[\e[0m\]# '
+export PATH="$HOME/.cargo/bin:$PATH"
+export PS1='\[\e[36m\]\w \[\e[0m\]$ '
 
-# apt aliases
-alias up='apt update && apt upgrade -y'
-alias it='apt install -y'
-alias rmf='apt autoremove -y --purge'
+# dnf aliases
+alias up='sudo dnf update -y'
+alias it='sudo dnf install -y'
+alias rmf='sudo dnf remove -y'
 
 # improve ls command
 alias ls='ls --color --group-directories-first'
@@ -46,11 +46,11 @@ run() {
 		return 1
 	fi
 
-	if [[ ! -d ~/git/"$2" ]]; then
+	if [[ ! -d ~/Git/"$2" ]]; then
 		echo "Invalid project: $2"
 		return 1
 	fi
 
-	cd ~/git/"$2"
+	cd ~/Git/"$2"
 	npm run "$1"
 }
