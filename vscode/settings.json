@@ -11,5 +11,5 @@
 	// Miscellaneous
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
-	"workbench.startupEditor": "none"
+	"workbench.startupEditor": "none",
 }
