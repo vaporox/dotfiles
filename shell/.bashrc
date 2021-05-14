@@ -1,9 +1,10 @@
-export PS1='\[\e[36m\]\w \[\e[0m\]$ '
+export PATH="$HOME/bin:$PATH"
+export PS1='\[\e[36m\]\w \[\e[0m\]# '
 
-# dnf aliases
-alias up='sudo dnf update -y'
-alias it='sudo dnf install -y'
-alias rmf='sudo dnf remove -y'
+# apt aliases
+alias up='apt update && apt upgrade -y'
+alias it='apt install -y'
+alias rmf='apt autoremove -y --purge'
 
 # improve ls command
 alias ls='ls --color --group-directories-first'
