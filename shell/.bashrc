@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/.ghcup/bin:$PATH"
 export PS1='\[\e[36m\]\w \[\e[0m\]# '
 
 # apt aliases
