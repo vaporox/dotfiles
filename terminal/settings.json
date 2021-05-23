@@ -4,8 +4,14 @@
 	// Set the default to WSL
 	"defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
 
-	// List of all profiles
 	"profiles": {
+		// Make background transparent
+		"defaults": {
+			"useAcrylic": true,
+			"acrylicOpacity": 0.8,
+		},
+
+		// List of all profiles
 		"list": [
 			{
 				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
