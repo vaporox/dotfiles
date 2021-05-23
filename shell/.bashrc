@@ -30,10 +30,8 @@ mkcd() {
 
 # remove current directory
 rmpwd() {
-	echo "Do you really want to remove '$PWD'?"
-
 	local confirm
-	read confirm
+	read -p "Remove '$PWD'? " confirm
 
 	if [[ ! "$confirm" =~ ^y(es?)?$ ]]; then
 		return 1
