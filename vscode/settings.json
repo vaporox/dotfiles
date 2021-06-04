@@ -1,14 +1,11 @@
 {
-	// Font
 	"editor.fontFamily": "Fira Code",
 	"editor.fontLigatures": true,
 	"editor.fontWeight": "500",
 
-	// Theme
 	"workbench.colorTheme": "Ayu Mirage",
 	"workbench.iconTheme": "ayu",
 
-	// Miscellaneous
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
 	"workbench.startupEditor": "none",

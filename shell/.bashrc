@@ -1,15 +1,13 @@
 export PATH="$HOME/.cargo/bin:$HOME/.ghcup/bin:$PATH"
 export PS1='\[\e[36m\]\w \[\e[0m\]# '
 
-# apt aliases
 alias up='apt update && apt upgrade -y'
 alias it='apt install -y'
 alias rmf='apt autoremove -y --purge'
 
-# improve ls command
 alias ls='ls --color --group-directories-first'
+alias back='cd $OLDPWD'
 
-# create directory and cd into it
 mkcd() {
 	if [[ ! "$*" ]]; then
 		echo 'No name specified!'
@@ -28,7 +26,6 @@ mkcd() {
 	cd "$*"
 }
 
-# remove current directory
 rmpwd() {
 	local confirm
 	read -p "Remove '$PWD'? " confirm

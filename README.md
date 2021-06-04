@@ -1,4 +1,4 @@
-## About
+# Dotfiles
 
 In this repository, I'm hosting my personal configuration files. Very exciting.
 
