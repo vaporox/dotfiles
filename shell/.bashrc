@@ -1,5 +1,5 @@
-export PATH="$HOME/.cargo/bin:$HOME/.ghcup/bin:$PATH"
-export PS1='\[\e[36m\]\w \[\e[0m\]# '
+source "$HOME/.cargo/env"
+source "$HOME/.prompt"
 
 alias up='apt update && apt upgrade -y'
 alias it='apt install -y'
